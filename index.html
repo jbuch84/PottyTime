@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily's Potty Power!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Lily's Potty Power!</h1>
+    <div class="gauge-container">
+        <svg class="gauge" viewBox="0 0 200 200">
+            <circle class="gauge-background" cx="100" cy="100" r="90" />
+            <path class="gauge-fill" d="" />
+        </svg>
+        <div class="gauge-cover">0%</div>
+        <img src="lily_normal.png" alt="Lily" class="lily-image">
+    </div>
+    <div class="refill-buttons">
+            <button data-refill="20">Potty Time!</button>
+        </div>
+        <div class="stickers">Stickers: 0</div>
+                <div class="star-stickers"></div>
+                <button id="pauseButton">Pause</button>
+                <audio id="cheerSound">
+                    <source src="cheer.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="crySound">
+                <source src="cry.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
